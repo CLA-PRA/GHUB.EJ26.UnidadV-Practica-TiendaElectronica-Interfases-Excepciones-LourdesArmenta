@@ -6,6 +6,39 @@ En esta practica se integran los fundamentos de Programacion Orientada a Objetos
 
 Desarrollar un sistema orientado a objetos para administrar una tienda de productos tecnologicos y videojuegos. El sistema debe permitir registrar productos de distintas categorias, gestionar existencias, operar un carrito de compras, aplicar descuentos (incluyendo estrategias de promocion), buscar y filtrar articulos, ordenar el catalogo y manejar errores mediante excepciones de dominio.
 
+## Modo plantilla para classroom
+
+Este repositorio se usa como base para que el alumnado implemente clases desde cero.
+
+- En esta version se removieron implementaciones de la capa de dominio para que se construyan a partir del diagrama de clases.
+- Es normal que el proyecto no compile al inicio.
+- Un criterio de avance y evaluacion es que el proyecto vuelva a compilar correctamente despues de implementar las clases faltantes.
+
+### Clases a implementar por el alumnado
+
+- `logica/Producto.java`
+- `logica/DispositivoElectronico.java`
+- `logica/Inventario.java`
+- `logica/Carrito.java`
+- `logica/LineaCarrito.java`
+- `logica/UtilArreglos.java`
+- `logica/DescuentoPorcentaje.java`
+- `logica/DescuentoMontoFijo.java`
+- `logica/DescuentoPorCategoria.java`
+- `logica/Computadora.java`
+- `logica/ConsolaVideojuego.java`
+- `logica/Tableta.java`
+- `logica/Telefono.java`
+- `logica/Videojuego.java`
+
+### Orden sugerido de implementacion
+
+1. Bases de la jerarquia: `Producto` y `DispositivoElectronico`.
+2. Jerarquia de productos: `Videojuego`, `Computadora`, `ConsolaVideojuego`, `Telefono`, `Tableta`.
+3. Utilidades y estrategias: `UtilArreglos`, `DescuentoPorcentaje`, `DescuentoMontoFijo`, `DescuentoPorCategoria`.
+4. Inventario: `Inventario`.
+5. Carrito: `LineaCarrito` y `Carrito`.
+
 ## Requisitos funcionales
 
 ### 1) Jerarquia de productos
